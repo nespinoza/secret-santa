@@ -13,6 +13,8 @@ to spam people about that awesome event you are planning and you want them to at
 personalized e-mails are better at this job than just sending an entire e-mail chain to all 
 your invitees).
 
+Author: Néstor Espinoza (nsespino@uc.cl)
+
 DEPENDENCIES
 ------------
 
