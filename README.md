@@ -11,7 +11,12 @@ or someone every week (e.g., running the code as a cronjob), e-mail yourself whe
 to know when that piece of code that is running on a screen is actually finished or, simply, 
 to spam people about that awesome event you are planning and you want them to attend (yes; 
 personalized e-mails are better at this job than just sending an entire e-mail chain to all 
-your invitees).
+your invitees). 
+
+Currently, the code works for google accounts only. Before using the code, you'll have to 
+activate the 'Less secure apps' from your gmail account or you'll get an SMTP Authentication 
+Error. I usually deactivate it when using the code, then activate it back again. You can do 
+this from here: https://www.google.com/settings/security/lesssecureapps.
 
 Author: Néstor Espinoza (nsespino@uc.cl)
 
@@ -38,3 +43,4 @@ In order to send the e-mails, just modify the parameters of the ho-ho-ho.py file
 sound like Santa's laugh) adding your e-mail, password, subject of the e-mail and your name as you 
 want it to be seen next to your e-mail (you can put "REAL SANTA" if you want). Finally, just run 
 the ho-ho-ho.py code and you are good to go.
+
