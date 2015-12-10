@@ -32,7 +32,7 @@ Create a list of the names + e-mails as in the example file attached to this cod
 Then, create the e-mail in any format you like but keeping in mind that [Parameter1] and [Parameter2] 
 will be changed in the actual e-mail by the name of the person you are sending the e-mail to and 
 the person that was assigned to the receiver of the e-mail respectively (both parameters taken from the 
-list_of_emails.txt) file.
+list_of_emails.txt file).
 
 In order to send the e-mails, just modify the parameters of the ho-ho-ho.py file (yes, it is intended to 
 sound like Santa's laugh) adding your e-mail, password, subject of the e-mail and your name as you 
