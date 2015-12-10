@@ -4,7 +4,7 @@ This code assumes you were assigned to take care of the pairing of a Secret Sant
 your company/institution, and you are too lazy to:
 
     1. Pair the people.
-    2. Send the e-mails to let who got who.
+    2. Send the e-mails to let people know who got who.
 
 Of course, this code can easily be modified to send automatic notifications to you 
 or someone every week (e.g., running the code as a cronjob), e-mail yourself when you want 
