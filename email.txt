@@ -1,0 +1,11 @@
+Hello [Parameter1],
+  
+ This e-mail is to let you know that you are [Parameter2]'s Secret Santa!
+
+ Remember to bring the gift to the party, which is going to be held on December 18th at 17:00 CST. 
+
+ We have decided that a maximum price for the present should be around ~$10.000 CLP. Again, this is only 
+ an order of magnitude and you are free to go lower or higher than that...just take into account the tastes and 
+ whishes of the person you were assigned!
+
+Cheers!
