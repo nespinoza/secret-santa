@@ -39,18 +39,18 @@ email: XXXXXXXXX@gmail.com
 password: XXXXXXXXX
 ```
 3. Modify the [emails.json](https://github.com/RodolfoFerro/secret-santa/blob/master/emails.json) file to add the people that will be assigned. The format of this JSON file must be as follows:
-```json
+```txt
 [
-  # ...
-  {
-    "name": "Person N",
-    "email": "email_N@domain.com"
-  },
-  {
-    "name": "Person N+1",
-    "email": "email_N+1@domain.com"
-  },
-  # ...
+   ...
+   {
+      "name": "Person N",
+      "email": "email_N@domain.com"
+   },
+   {
+      "name": "Person N+1",
+      "email": "email_N+1@domain.com"
+   },
+   ...
 ]
 ```
 4. Finally, just run the main script:
