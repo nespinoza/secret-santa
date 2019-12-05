@@ -1,0 +1,7 @@
+# Configuration file
+body: email.txt
+list: emails.json
+subject: "[Future Lab] Tu amigo secreto es..."
+sender: "Equipo Future Lab"
+email: XXXXXXXXX@gmail.com
+password: XXXXXXXXX
