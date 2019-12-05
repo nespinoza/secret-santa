@@ -35,6 +35,7 @@ def assign_partner(emails : list) -> list:
 	else:
 		people = [p['name'] for p in emails]
 		for e in emails:
+			shuffle(people)  # Added more stochasticity...
 			while True:
 				shuffle(people)
 				if people[-1] != e['name']:

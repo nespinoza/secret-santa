@@ -3,9 +3,9 @@
 <p>Este email es para hacerte saber que tu amigo secreto es: <br>
 👉 <b>{}</b> </p>
 
-<p>Te recordamos que el monto máximo para el intercambio es de $150.00 MXN. La elección del regalo es libre, pero si aún no tienes idea de qué regalar, te aconsejamos que el regalo sea algún objeto <i>Futurezco</i> como:  una taza, calcetines, un pack de stickers para laptop... En fin, algo que te nazca obsequiar con el espírito del Lab. 🚀 </p>
+<p>Te recordamos que el monto máximo para el intercambio es de $150.00 MXN. La elección del regalo es libre, pero si aún no tienes idea de qué regalar, te aconsejamos que el regalo sea algún objeto <i>Futurezco</i> como:  una taza, calcetines, un pack de stickers para laptop... En fin, algo que te nazca obsequiar con el espíritu del Lab. 🚀 </p>
 
-<h3>Te dejamos un Yoda bebé:</h3>
+<h3>Te compartimos un Yoda bebé:</h3>
 <img src="https://www.cinepremiere.com.mx/wp-content/uploads/2019/11/Yoda-beb%C3%A9.jpg" width="300px">
 
 <p>¡Saludos!</p>
