@@ -11,17 +11,16 @@ Currently, the code works for google accounts only. Before using the code, you'l
 
 This code has been modified from [this repo](https://github.com/nespinoza/secret-santa).
 
+## Dependencies
 
-## Dependencies
+This code makes use of the following Python's libraries:
 
-This code makes use of Python's:
-
-- email
-- random
-- smtplib
-- yaml
-- json
-- ssl
+- `email`
+- `random`
+- `smtplib`
+- `yaml`
+- `json`
+- `ssl`
 
 All of them are already included in Python.
 
@@ -42,16 +41,16 @@ password: XXXXXXXXX
 3. Modify the [emails.json](https://github.com/RodolfoFerro/secret-santa/blob/master/emails.json) file to add the people that will be assigned. The format of this JSON file must be as follows:
 ```json
 [
-    ...
-	{
-		"name": "Person N",
-		"email": "email_N@domain.com"
-	},
-	{
-		"name": "Person N+1",
-		"email": "email_N+1@domain.com"
-	},
-    ...
+  # ...
+  {
+    "name": "Person N",
+    "email": "email_N@domain.com"
+  },
+  {
+    "name": "Person N+1",
+    "email": "email_N+1@domain.com"
+  },
+  # ...
 ]
 ```
 4. Finally, just run the main script:
