@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from mail_utils import email_meta_loader
 from mail_utils import assign_partner
 from mail_utils import load_emails
