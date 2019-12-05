@@ -9,7 +9,7 @@ import json
 import ssl
 
 
-def email_meta_loader():
+def email_meta_loader() -> dict:
 	"""Utility function to load email parameters."""
 
 	with open('_config.yml') as config:
@@ -18,7 +18,7 @@ def email_meta_loader():
 	return meta
 
 
-def load_emails(emails_path : str):
+def load_emails(emails_path : str) -> list:
 	"""Utility function to load emails list."""
 
 	with open(emails_path) as emails_file:
@@ -27,7 +27,7 @@ def load_emails(emails_path : str):
 	return emails
 
 
-def assign_partner(emails : list):
+def assign_partner(emails : list) -> list:
 	"""Utility function to match partners from emails list."""
 
 	if len(emails) < 2:
@@ -45,7 +45,7 @@ def assign_partner(emails : list):
 	return emails
 
 
-def send_email(email : dict, user : dict):
+def send_email(email : dict, user : dict) -> None:
 	"""Utility function to send email to a specific user."""
 
 	# Setup email configurations:
