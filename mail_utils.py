@@ -45,7 +45,7 @@ def assign_partner(emails : list):
 	return emails
 
 
-def send_email(email, user):
+def send_email(email : dict, user : dict):
 	"""Utility function to send email to a specific user."""
 
 	# Setup email configurations:
