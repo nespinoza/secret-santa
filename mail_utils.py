@@ -2,7 +2,7 @@
 
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from random import shuffle
+from random import shuffle, randint
 import smtplib
 import yaml
 import json
@@ -30,18 +30,21 @@ def load_emails(emails_path : str) -> list:
 def assign_partner(emails : list) -> list:
 	"""Utility function to match partners from emails list."""
 
-	if len(emails) < 2:
-		raise Exception('List must have at least 2 emails.')
-	else:
-		people = [p['name'] for p in emails]
-		for e in emails:
-			shuffle(people)  # Added more stochasticity...
-			while True:
-				shuffle(people)
-				if people[-1] != e['name']:
-					pop = people.pop()
-					e['assigned'] = pop
-					break
+	n = len(emails)
+	if n < 2:
+		raise ValueError(f'List must have at least 2 emails, it has {n} elements')
+
+	shuffle(emails)
+	start = 0
+	while start < n-1:
+		# choose the cut for the cycle
+		cut = randint(start+2, n-1) if start+2 < n-1 else n
+		if cut == n-1: cut = n
+		# assign the cycle
+		for i in range(start, cut):
+			emails[i]['assigned'] = emails[(i+1)%cut]['name']
+		# reset the range
+		start = cut
 
 	return emails
 
