@@ -36,14 +36,14 @@ def assign_partner(emails : list) -> list:
 
 	shuffle(emails)
 	start = 0
-	while start < n-1:
-		# choose the cut for the cycle
-		cut = randint(start+2, n-1) if start+2 < n-1 else n
-		if cut == n-1: cut = n
-		# assign the cycle
+	while start < n - 1:
+		# Choose the cut for the cycle
+		cut = randint(start + 2, n - 1) if start + 2 < n - 1 else n
+		if cut == n - 1: cut = n
+		# Assign the cycle
 		for i in range(start, cut):
-			emails[i]['assigned'] = emails[(i+1)%cut]['name']
-		# reset the range
+			emails[i]['assigned'] = emails[(i + 1) % cut]['name']
+		# Reset the range
 		start = cut
 
 	return emails
