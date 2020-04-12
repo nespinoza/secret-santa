@@ -1,40 +1,46 @@
-import unittest
+import pytest
+
 from mail_utils import assign_partner
 
-class TestMailUtils(unittest.TestCase):
-    emails = [
-        {
-            "name": "Rodolfo Ferro",
-            "email": "ferro@cimat.mx"
-        },
-        {
-            "name": "Ricardo Mirón",
-            "email": "ricardomirontorres@gmail.com"
-        },
-        {
-            "name": "Ivan Gonzalez",
-            "email": "me@ivgo.me"
-        }
-    ]
 
-    def _test_valid_emails(self, emails):
-        assigned = set()
+emails = [
+    {
+        "name": "Rodolfo Ferro",
+        "email": "ferro@cimat.mx"
+    },
+    {
+        "name": "Ricardo Mirón",
+        "email": "ricardomirontorres@gmail.com"
+    },
+    {
+        "name": "Ivan Gonzalez",
+        "email": "me@ivgo.me"
+    }
+]
 
-        for mail in emails:
-            self.assertIn('assigned', mail) # not empty assignment
-            self.assertIsNotNone(mail['assigned']) 
-            self.assertNotEqual(mail['name'], mail['assigned']) # no self assignment
 
-            assigned.add(mail['assigned'])
+def _test_valid_emails(emails):
+    assigned = set()
 
-        self.assertEqual(len(assigned), len(emails)) # all have assignment
+    for mail in emails:
+        assert mail.get('assigned', None) is not None  # not empty assignment
+        assert mail['name'] != mail['assigned']  # no self assignment
 
-    def test_assign_partner(self):
-        with self.assertRaises(ValueError):
-            assign_partner([])
-            assign_partner([0])
+        assigned.add(mail['assigned'])
 
-        n = 10 # reasonable number of tests for a stochastic process
-        for _ in range(n): 
-            emails = assign_partner(self.emails)
-            self._test_valid_emails(emails)
+    assert len(assigned) == len(emails)  # all have assignment
+
+
+def test_assign_partner():
+    global emails
+
+    with pytest.raises(ValueError):
+        assign_partner([])
+
+    with pytest.raises(ValueError):
+        assign_partner([0])
+
+    n = 10  # reasonable number of tests for a stochastic process
+    for _ in range(n):
+        assigned_emails = assign_partner(emails.copy())
+        _test_valid_emails(assigned_emails)
