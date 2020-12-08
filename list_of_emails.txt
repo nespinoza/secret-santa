@@ -1,2 +1,0 @@
-Name1-LastName1    e-mail@whatever.com
-Name2-LastName2    e-mail2@other_company.org

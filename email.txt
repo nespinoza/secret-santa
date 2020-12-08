@@ -1,11 +1,11 @@
-Hello [Parameter1],
+<h3>¡Hola {}!</h3>
   
- This e-mail is to let you know that you are [Parameter2]'s Secret Santa!
+<p>Este email es para hacerte saber que tu amigo secreto es: <br>
+👉 <b>{}</b> </p>
 
- Remember to bring the gift to the party, which is going to be held on December 18th at 17:00 CST. 
+<p>Te recordamos que el monto máximo para el intercambio es de $150.00 MXN. La elección del regalo es libre, pero si aún no tienes idea de qué regalar, te aconsejamos que el regalo sea algún objeto <i>Futurezco</i> como:  una taza, calcetines, un pack de stickers para laptop... En fin, algo que te nazca obsequiar con el espíritu del Lab. 🚀 </p>
 
- We have decided that a maximum price for the present should be around ~$10.000 CLP. Again, this is only 
- an order of magnitude and you are free to go lower or higher than that...just take into account the tastes and 
- whishes of the person you were assigned!
+<h3>Te compartimos un Yoda bebé:</h3>
+<img src="https://www.cinepremiere.com.mx/wp-content/uploads/2019/11/Yoda-beb%C3%A9.jpg" width="300px">
 
-Cheers!
+<p>¡Saludos!</p>
