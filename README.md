@@ -61,4 +61,4 @@ $ python run.py
 
 This software contains a MIT License.
 
-**Copyright (c) 2020 Nestor Espinza**, with contributions from Rodolfo Ferro & Ivan Gonzalez
+**Copyright (c) 2020 Nestor Espinoza**, with contributions from Rodolfo Ferro & Ivan Gonzalez
