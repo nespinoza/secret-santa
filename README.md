@@ -9,8 +9,6 @@ Of course, this code can easily be modified to send automatic notifications to y
 
 Currently, the code works for google accounts only. Before using the code, you'll have to  activate the 'Less secure apps' from your gmail account or you'll get an SMTP Authentication  Error. I usually deactivate it when using the code, then activate it back again. You can do  this from here: https://www.google.com/settings/security/lesssecureapps.
 
-This code has been modified from [this repo](https://github.com/nespinoza/secret-santa).
-
 ## Dependencies
 
 This code makes use of the following Python's libraries:
@@ -63,4 +61,4 @@ $ python run.py
 
 This software contains a MIT License.
 
-**Copyright (c) 2019 Rodolfo Ferro**
+**Copyright (c) 2020 Nestor Espinza**, with contributions from Rodolfo Ferro & Ivan Gonzalez
