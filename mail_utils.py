@@ -56,7 +56,6 @@ def assign_partner(emails : list) -> list:
                     master_dict[emails[i]['assigned']] = 1
                 else:
                     not_true = True
-                    print('oops')
                     assign_partner(emails)
                     break
         return emails
