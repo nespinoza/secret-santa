@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+from email.message import EmailMessage
 from random import shuffle, randint
 import smtplib
 import yaml
@@ -65,7 +64,7 @@ def send_email(email : dict, user : dict) -> None:
         """Utility function to send email to a specific user."""
 
         # Setup email configurations:
-        message = MIMEMultipart('alternative')
+        message = EmailMessage()
         message['Subject'] = email['subject']
         message['From'] = email['email']
         message['To'] = user['email']
@@ -75,8 +74,7 @@ def send_email(email : dict, user : dict) -> None:
                 html = body.read()
 
         html = html.format(user['name'], user['assigned'])
-        body = MIMEText(html, 'html')
-        message.attach(body)
+        message.set_content(html, subtype='html')
 
         # Create secure connection with server and send email
         context = ssl.create_default_context()
