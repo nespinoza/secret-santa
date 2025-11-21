@@ -7,7 +7,10 @@ This code assumes you were assigned to take care of the pairing of a Secret Sant
 
 Of course, this code can easily be modified to send automatic notifications to you or someone every week (e.g., running the code as a cronjob), e-mail yourself when you want to know when that piece of code that is running on a screen is actually finished or, simply, to spam people about that awesome event you are planning and you want them to attend (yes; personalized e-mails are better at this job than just sending an entire e-mail chain to all your invitees). 
 
-Currently, the code works for google accounts only. Before using the code, you'll have to  activate the 'Less secure apps' from your gmail account or you'll get an SMTP Authentication  Error. I usually deactivate it when using the code, then activate it back again. You can do  this from here: https://www.google.com/settings/security/lesssecureapps.
+Currently, the code works for google accounts only. Before using the code, you'll have to follow one of these options, depending on the status of your account:
+
+- Go to https://myaccount.google.com/apppasswords --- and setup a password for an app. Copy that password in the `_config.yml`. Note you can always delete the app password after usage! Note you can set this up _only_ if you setup 2-Step Verification (here: myaccount.google.com/security).
+- Activate the 'Less secure apps' from your gmail account or you'll get an SMTP Authentication  Error. I usually deactivate it when using the code, then activate it back again. You can do  this from here: https://www.google.com/settings/security/lesssecureapps.
 
 ## Changelog
 - November, 2025. Updated code via Jules to make it compatible with latest `email` syntax.
